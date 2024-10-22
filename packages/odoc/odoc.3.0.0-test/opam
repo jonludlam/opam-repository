@@ -62,7 +62,7 @@ depends: [
 ]
 
 x-extra-doc-deps: [
-  "core" {= "0.17.1"}
+  "core" {= "v0.17.1"}
 ]
 
 
