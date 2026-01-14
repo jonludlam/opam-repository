@@ -54,15 +54,12 @@ depends: [
   "ppx_expect" {with-test}
   "bos" {with-test}
   "bisect_ppx" {with-test & > "2.5.0"}
+  "odoc-driver" {= version & with-doc & post}
+  "sherlodoc" {= version & with-doc & post}
+  "odig" {with-doc & post}
 ]
 
 conflicts: [ "ocaml-option-bytecode-only" ]
-
-x-extra-doc-deps: [
-  "odoc-driver" {= version}
-  "sherlodoc" {= version}
-  "odig"
-]
 
 build: [
   ["dune" "subst"] {dev}
